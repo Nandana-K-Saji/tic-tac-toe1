@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tic tac toe</title>
+    <style>
+        body {
+            background-color: rgb(202, 10, 202);
+            /* display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh; */
+            color: white;
+            text-align: center;
+        }
+
+        #mainArea {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            height: 80vh;
+            width: 100vp;
+            /* background-color:aqua ; */
+
+        }
+
+        #gameArea {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 10px;
+        }
+
+        .box {
+            height: 80px;
+            width: 80px;
+            border-radius: 10px;
+            border: 0px;
+            background-color: rgb(125, 20, 224);
+            cursor: pointer;
+            color: white;
+            font-size: xx-large;
+            
+
+        }
+        #restartBtn{
+            margin-left: 556px;
+            margin-top: -122px;
+            font-size: 20px;
+            width: 130px;
+            height: 50px;
+            background-color: rgb(64, 222, 16);
+            color: white;
+            border: none;
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1>TIC TAC TOE</h1>
+    <div id="mainArea">
+        <div id="gameArea">
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+
+        </div>
+        <div id="resultDiv"></div>
+        
+        
+
+    </div>
+    <button id="restartBtn" >Restart</button>
+
+</body>
+<script src="tictac.js"></script>
+
+</html>
